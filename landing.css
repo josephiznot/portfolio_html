@@ -1,10 +1,10 @@
 h1 {
-  font-size: 50px;
-  font-weight: 600;
+  font-size: 25px;
+  font-weight: 100;
 }
 main {
   width: 100vw;
-  height: 100vh;
+  min-height: 450px;
   background: #ececec;
   display: flex;
   flex-direction: column;
@@ -19,7 +19,7 @@ main {
   flex-direction: column;
   justify-content: space-around;
   align-items: center;
-  padding: 0 10px;
+  padding: 0 30px;
   text-align: center;
 }
 
@@ -31,6 +31,17 @@ main {
   box-shadow: 10px 10px 0px 0px black;
   animation-duration: 3s;
   animation: bounce 2s infinite;
+}
+navbar {
+  width: 100vw;
+  height: 90px;
+  background: black;
+  position: absolute;
+  top: 0;
+  color: white;
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
 
 @keyframes bounce {
