@@ -1,3 +1,37 @@
+#drop-down-menu {
+  z-index: 1;
+  height: 100vh;
+  width: 100vw;
+  background: rgb(17, 17, 17, 0.95);
+  /* background: black; */
+  position: fixed;
+  bottom: 100vh;
+  color: white;
+}
+#drop-down-menu ul {
+  height: calc(100vh - 90px);
+  width: 100vw;
+}
+/* li {
+  width: 100vw;
+  height: 25%;
+} */
+ul a {
+  height: 25%;
+  width: 100vw;
+}
+
+@keyframes dropMenu {
+  from {
+    top: 0px;
+  }
+  to {
+    top: 100vh;
+  }
+}
+.p-dividers span {
+  font-size: 22px;
+}
 p {
   line-height: 18px;
 }
@@ -11,6 +45,7 @@ p {
   background: black;
 }
 navbar {
+  z-index: 2;
   width: 100vw;
   height: 90px;
   background: rgb(17, 17, 17, 0.95);
@@ -41,8 +76,11 @@ navbar:nth-child(1) {
   text-align: center;
 }
 h1 {
-  font-size: 25px;
+  font-size: 40px;
   font-weight: 100;
+}
+h3 {
+  font-size: 25px;
 }
 #menu-container {
   width: 40px;
@@ -69,16 +107,16 @@ h1 {
   align-items: center;
 }
 main h1 {
-  font-size: 123px;
+  font-size: 130px;
   font-weight: 800;
-  letter-spacing: 10px;
+  letter-spacing: 4px;
   position: relative;
-  top: 20px;
+  top: 25px;
 }
 main h2 {
   font-size: 60px;
   font-weight: 500;
-  letter-spacing: -2px;
+  letter-spacing: -3px;
 }
 
 main {

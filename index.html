@@ -13,11 +13,30 @@
 
 </head>
 
-<body>
+<body onscroll="handleScrollChange()">
+  <div id="drop-down-menu">
+    <ul class="flex-column text-center">
+      <a href="#landing-container" class="flex-center" onclick="closeMenu()">
+        <li class="flex-center">Home</li>
+      </a>
+      <a href="#about-container" class="flex-center" onclick="closeMenu()">
+        <li class="flex-center">About</li>
+      </a>
+      <a href="#projects-container" class="flex-center" onclick="closeMenu()">
+        <li class="flex-center">Projects</li>
+      </a>
+      <a href="#skills-container" class="flex-center" onclick="closeMenu()">
+        <li class="flex-center">Skills</li>
+      </a>
+      <a href="#contact-container" class="flex-center" onclick="closeMenu()">
+        <li class="flex-center">Contact</li>
+      </a>
+    </ul>
+  </div>
   <!--NAVBAR-->
   <navbar class="show-border">
-    <h1>Joe Anderson</h1>
-    <div id="menu-container">
+    <h3>Joe Anderson</h3>
+    <div onclick="dropDownMenu()" id="menu-container">
       <span></span>
       <span></span>
       <span></span>
@@ -29,15 +48,9 @@
       <h1>Joe</h1>
       <h2>Anderson</h2>
       <div class="divider"></div>
-      <p>Student | Coder | Mentor </p>
-      <div class="media-container">
-        <a target="__blank" href="https://github.com/josephiznot">
-          <img class="icon-hover github-circle" src="/icons_copy/github/github-original.svg">
-        </a>
-        <a target="__blank" href="https://www.linkedin.com/in/joedanderson/">
-          <img class="icon-hover" src="/icons_copy/linkedin/linkedin-plain.svg" width="25px">
-        </a>
-      </div>
+      <p class="p-dividers">Student
+        <span>|</span> Coder
+        <span>|</span> Mentor </p>
     </div>
 
   </main>
