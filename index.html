@@ -14,21 +14,22 @@
 </head>
 
 <body onscroll="handleScrollChange()">
+  <!--DROP-DOWN MENU-->
   <div id="drop-down-menu">
     <ul class="flex-column text-center">
-      <a href="#landing-container" class="flex-center" onclick="closeMenu()">
+      <a class="flex-center" onclick="dropDownMenu(scrollToHome)">
         <li class="flex-center">Home</li>
       </a>
-      <a href="#about-container" class="flex-center" onclick="closeMenu()">
+      <a class="flex-center" onclick="dropDownMenu(scrollToAbout)">
         <li class="flex-center">About</li>
       </a>
-      <a href="#projects-container" class="flex-center" onclick="closeMenu()">
+      <a class="flex-center" onclick="dropDownMenu(scrollToProjects)">
         <li class="flex-center">Projects</li>
       </a>
-      <a href="#skills-container" class="flex-center" onclick="closeMenu()">
+      <a class="flex-center" onclick="dropDownMenu(scrollToSkills)">
         <li class="flex-center">Skills</li>
       </a>
-      <a href="#contact-container" class="flex-center" onclick="closeMenu()">
+      <a class="flex-center" onclick="dropDownMenu(scrollToContact)">
         <li class="flex-center">Contact</li>
       </a>
     </ul>
@@ -36,11 +37,30 @@
   <!--NAVBAR-->
   <navbar class="show-border">
     <h3>Joe Anderson</h3>
+    <!--MENU-->
     <div onclick="dropDownMenu()" id="menu-container">
       <span></span>
       <span></span>
       <span></span>
     </div>
+    <!--HEADER-->
+    <header>
+      <a class="flex-center" onclick="dropDownMenu(scrollToHome)">
+        <li class="flex-center">Home</li>
+      </a>
+      <a class="flex-center" onclick="dropDownMenu(scrollToAbout)">
+        <li class="flex-center">About</li>
+      </a>
+      <a class="flex-center" onclick="dropDownMenu(scrollToProjects)">
+        <li class="flex-center">Projects</li>
+      </a>
+      <a class="flex-center" onclick="dropDownMenu(scrollToSkills)">
+        <li class="flex-center">Skills</li>
+      </a>
+      <a class="flex-center" onclick="dropDownMenu(scrollToContact)">
+        <li class="flex-center">Contact</li>
+      </a>
+    </header>
   </navbar>
   <!--LANDING-->
   <main id="landing-container" class="show-border flex-center">
@@ -58,6 +78,7 @@
   <figcaption id="about-container" class="title-and-container show-border">
     <h1 class="text-center">About Me</h1>
     <div class="divider"></div>
+    <img class="card" src="/Screen Shot 2018-06-03 at 7.52.09 PM.png" width="250px">
     <article class="flex-column">
       <p class="lead">Hello! I am a chef-turned-web-developer who performs well with deadlines and explores new techniques of programming
         in order to run code more efficient. </p>
@@ -67,13 +88,6 @@
       <p class="lead">Three months later I graduated from a coding bootcamp in Dallas called DevMountain. And out of my class of 17 students,
         I was offered a mentor position for the next cohort of students. I am currently mentoring at DevMountain and I am
         excited to see where the tech industry and my nack for coding takes me.</p>
-    </article>
-  </figcaption>
-  <!--PROJECTS-->
-  <figcaption id="projects-container" class="title-and-container show-border">
-    <h1 class="text-center">My Projects</h1>
-    <div class="divider"></div>
-    <article>
     </article>
   </figcaption>
   <!--SKILLS-->
@@ -146,17 +160,49 @@
       </a>
     </article>
   </div>
+  <!--PROJECTS-->
+  <figcaption id="projects-container" class="title-and-container show-border">
+    <h1 class="text-center">My Projects</h1>
+    <div class="divider"></div>
+    <article class="flex-column">
+      <div id="kewey" class="card single-project title-and-container">
+        <img id="kewey-img" src="/images/Image 5-2-18 at 7.16 AM.jpg">
+        <h1>Kewey</h1>
+        <p>Kewey was developed as a web application for parents to monitor their children's location within a geofence. Using
+          cell towers and wifi nodes, Kewey can track a child's geolocation and reference it against the established geofence
+          setup by the parent. </p>
+        <a target="__blank" href="https://github.com/josephiznot/KeweyTech">
+          <img class="github-circle icon-hover" src="/icons_copy/github/github-original.svg" width="25px">
+        </a>
+      </div>
+      <div id="qode" class="card single-project title-and-container">
+        <img id="qode-img" src="/images/qode.png">
+        <h1>Qode</h1>
+        <p>Qode was designed to introduce people to the world of coding and web development. Web development is not easy. Online
+          courses tend to expect a minimum amount of prior knowledge, and often times new programmers will easily get discouraged
+          and overwhelmed by these high standards. Qode not only eliminates that gap of misunderstanding, but also introduces
+          the idea of coding as a possible career path or hobby for anyone interested in pursuing it. The best time to plant
+          a tree is yesterday. And in an industry expected to grow by 15% from 2016 to 2026, it is in our best interest to
+          welcome anyone on board.</p>
+        <a target="__blank" href="https://github.com/DevOcean-DM13/qode">
+          <img class="github-circle icon-hover" src="/icons_copy/github/github-original.svg" width="25px">
+        </a>
+      </div>
+    </article>
+  </figcaption>
   <!--CONTACT-->
   <div id="contact-container" class="title-and-container show-border">
     <h1 class="text-center">Contact</h1>
     <div class="divider"></div>
     <article class="flex-column text-center">
-      <p>Share your thoughts, ideas, or set up a meet with me at </p>
-      <a href="mailto:'josephiznot@gmail.com'?subject=Hello%20Joe!&body=I%20loved%20your%20portolio!">josephiznot@gmail.com</a>.
+      <img src="/icons_copy/coffee.svg">
+      <p>Lets grab some coffee!</p>
+      <a href="mailto:'josephiznot@gmail.com'?subject=Hello%20Joe!&body=I%20loved%20your%20portolio!">josephiznot@gmail.com</a>
+
     </article>
   </div>
   <!--FOOTER-->
-  <footer id="footer-container" class="show-border, flex-center">
+  <footer id="footer-container" class="show-border, flex-column">
 
     <div class="media-container">
       <a target="__blank" href="https://github.com/josephiznot">
@@ -168,6 +214,7 @@
       <a target="__blank" href="https://medium.com/@josephiznot">
         <img class="icon-hover" src="icons_copy/Medium_icon.svg.png" width="25px"> </a>
     </div>
+    <p>&copy; Developed by Joe Anderson</p>
   </footer>
 </body>
 <script src="myscripts.js" />

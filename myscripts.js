@@ -5,7 +5,7 @@ function alertMe() {
   alert("fly you fools");
 }
 
-const dropDownMenu = () => {
+const dropDownMenu = cb => {
   openMenu = !openMenu;
   if (openMenu) {
     document.getElementById(
@@ -15,10 +15,12 @@ const dropDownMenu = () => {
     document.getElementById("drop-down-menu").style.transform =
       "translateY(-100vh)";
   }
-  console.log(openMenu);
+  if (cb) {
+    cb();
+    console.log("hit");
+  }
 };
-// window.mouse.scroll(handleScrollChange());
-// document.body.onscr(handleScrollChange());
+
 const handleScrollChange = () => {
   scrollHeight = window.scrollY;
   console.log(window.scrollY);
@@ -26,4 +28,29 @@ const handleScrollChange = () => {
 
 const closeMenu = () => {
   openMenu = !openMenu;
+};
+const scrollToHome = () => {
+  if ((window.innerWidth = 320)) {
+    window.scrollTo({ top: 0, behavior: "smooth" });
+  }
+};
+const scrollToAbout = () => {
+  if ((window.innerWidth = 320)) {
+    window.scrollTo({ top: 430, behavior: "smooth" });
+  }
+};
+const scrollToProjects = () => {
+  if ((window.innerWidth = 320)) {
+    window.scrollTo({ top: 2030, behavior: "smooth" });
+  }
+};
+const scrollToSkills = () => {
+  if ((window.innerWidth = 320)) {
+    window.scrollTo({ top: 1130, behavior: "smooth" });
+  }
+};
+const scrollToContact = () => {
+  if ((window.innerWidth = 320)) {
+    window.scrollTo({ top: 2704, behavior: "smooth" });
+  }
 };

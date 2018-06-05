@@ -2,7 +2,7 @@
   z-index: 1;
   height: 100vh;
   width: 100vw;
-  background: rgb(17, 17, 17, 0.95);
+  background: rgb(17, 17, 17, 0.97);
   /* background: black; */
   position: fixed;
   bottom: 100vh;
@@ -12,13 +12,13 @@
   height: calc(100vh - 90px);
   width: 100vw;
 }
-/* li {
-  width: 100vw;
-  height: 25%;
-} */
 ul a {
   height: 25%;
   width: 100vw;
+  color: white;
+}
+article a {
+  color: #818181;
 }
 
 @keyframes dropMenu {
@@ -29,7 +29,8 @@ ul a {
     top: 100vh;
   }
 }
-.p-dividers span {
+.p-dividers span,
+span.divider {
   font-size: 22px;
 }
 p {
@@ -38,7 +39,7 @@ p {
 .intro-container {
   height: 300px;
 }
-.divider {
+div.divider {
   width: 235px;
   height: 2px;
   border-radius: 100%;
@@ -127,7 +128,8 @@ main {
   width: 100vw;
 }
 main,
-#skills-container {
+#skills-container,
+#contact-container {
   background: white;
 }
 #skills-container {
@@ -140,11 +142,11 @@ main {
   min-height: 430px;
 }
 figcaption {
-  height: 700px;
-}
-figcaption,
-#contact-container {
+  height: 1300px;
   background: #ececec;
+}
+figcaption article {
+  height: 1200px;
 }
 
 .flex-column {
@@ -154,7 +156,7 @@ figcaption,
   flex-direction: column;
   justify-content: space-around;
   align-items: center;
-  padding: 0 30px;
+  padding: 0 10px;
 }
 
 footer {
@@ -171,8 +173,11 @@ article img {
   width: 75px;
   margin: 14px 14px;
 }
+#about-container {
+  height: 1000px;
+}
 #about-container article {
-  height: 500px;
+  height: 600px;
 }
 article img:hover {
   transform: scale(1.2);
@@ -189,4 +194,40 @@ article img:hover {
   justify-content: space-around;
   align-items: center;
   width: 100px;
+}
+header {
+  width: 600px;
+  height: 90px;
+  display: none;
+  justify-content: space-around;
+  align-items: center;
+}
+.card {
+  border-radius: 3%;
+  box-shadow: 1px 1px 10px 1px black;
+}
+@media (min-width: 768px) {
+  #menu-container {
+    display: none;
+  }
+  header {
+    display: flex;
+  }
+  #drop-down-menu {
+    display: none;
+  }
+}
+.single-project {
+  width: 100%;
+  height: auto;
+}
+.single-project p {
+  padding: 24px 22px;
+  text-indent: 25px;
+}
+#qode-img {
+  width: 250px;
+}
+#kewey-img {
+  width: 175px;
 }
