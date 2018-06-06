@@ -1,3 +1,9 @@
+.flex-wrap {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-around;
+  align-items: center;
+}
 #drop-down-menu {
   z-index: 1;
   height: 100vh;
@@ -34,7 +40,7 @@ span.divider {
   font-size: 22px;
 }
 p {
-  line-height: 18px;
+  line-height: 19px;
 }
 .intro-container {
   height: 300px;
@@ -57,14 +63,12 @@ navbar {
   justify-content: space-between;
   align-items: center;
 }
-navbar:nth-child(1) {
-  padding-left: 20px;
-}
-navbar:nth-child(1) {
-  padding-right: 20px;
+
+navbar:nth-child(2) {
+  padding: 0 20px;
 }
 .show-border {
-  border: 1px red dotted;
+  /* border: 1px red dotted; */
 }
 .title-and-container {
   display: flex;
@@ -93,7 +97,7 @@ h3 {
   align-items: center;
 }
 #menu-container:active {
-  background: blue;
+  /* background: blue; */
 }
 
 #menu-container span {
@@ -128,7 +132,6 @@ main {
   width: 100vw;
 }
 main,
-#skills-container,
 #contact-container {
   background: white;
 }
@@ -137,16 +140,16 @@ main,
 }
 
 #contact-container,
-#skills-container,
 main {
   min-height: 430px;
 }
 figcaption {
-  height: 1300px;
+  height: 1700px;
   background: #ececec;
+  padding-top: 25px;
 }
 figcaption article {
-  height: 1200px;
+  height: 1500px;
 }
 
 .flex-column {
@@ -167,7 +170,7 @@ footer {
 article {
   min-height: 200px;
   width: 100vw;
-  border: 1px blue dotted;
+  /* border: 1px blue dotted; */
 }
 article img {
   width: 75px;
@@ -177,13 +180,14 @@ article img {
   height: 1000px;
 }
 #about-container article {
-  height: 600px;
+  height: 425px;
+  text-indent: 20px;
 }
-article img:hover {
+article a img:hover {
   transform: scale(1.2);
 }
 .icon-hover:hover {
-  background: blue;
+  background: whitesmoke;
 }
 .github-circle {
   width: 25px;
@@ -203,19 +207,8 @@ header {
   align-items: center;
 }
 .card {
-  border-radius: 3%;
-  box-shadow: 1px 1px 10px 1px black;
-}
-@media (min-width: 768px) {
-  #menu-container {
-    display: none;
-  }
-  header {
-    display: flex;
-  }
-  #drop-down-menu {
-    display: none;
-  }
+  border-radius: 5px;
+  box-shadow: 0.5px 1px 4px 0.1px black;
 }
 .single-project {
   width: 100%;
@@ -230,4 +223,67 @@ header {
 }
 #kewey-img {
   width: 175px;
+}
+#about-container p {
+  max-width: 500px;
+}
+@media (min-width: 660px) {
+  .single-project p {
+    padding: 24px 100px;
+  }
+}
+@media (min-width: 768px) {
+  #menu-container {
+    display: none;
+  }
+  header {
+    display: flex;
+  }
+  #drop-down-menu {
+    display: none;
+  }
+  #about-container {
+    height: 760px;
+  }
+  #skills-container {
+    height: 500px;
+  }
+  .single-project {
+    width: 680px;
+  }
+  /* figcaption article {
+    height: 1000px;
+  } */
+
+  figcaption {
+    height: 1300px;
+  }
+}
+@media (min-width: 1024px) {
+  main {
+    height: 600px;
+  }
+  /* @media (min-width: 1440px) {
+    figcaption {
+    }
+  } */
+  .intro-container {
+    height: 348px;
+  }
+  main h1 {
+    font-size: 200px;
+  }
+  main h2 {
+    font-size: 88px;
+  }
+}
+a {
+  color: white;
+}
+i {
+  color: white;
+  font-size: 20px;
+}
+i:hover {
+  color: #ececec;
 }

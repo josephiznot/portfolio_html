@@ -35,22 +35,25 @@ const scrollToHome = () => {
   }
 };
 const scrollToAbout = () => {
-  if ((window.innerWidth = 320)) {
+  if (window.innerWidth <= 320) {
     window.scrollTo({ top: 430, behavior: "smooth" });
   }
 };
 const scrollToProjects = () => {
-  if ((window.innerWidth = 320)) {
-    window.scrollTo({ top: 2030, behavior: "smooth" });
+  console.log("inner width:", window.innerWidth);
+  if (window.innerWidth >= 768) {
+    window.scrollTo({ top: 1689, behavior: "smooth" });
+  } else if (window.innerWidth <= 320) {
+    window.scrollTo({ top: 2330, behavior: "smooth" });
   }
 };
 const scrollToSkills = () => {
   if ((window.innerWidth = 320)) {
-    window.scrollTo({ top: 1130, behavior: "smooth" });
+    window.scrollTo({ top: 1429, behavior: "smooth" });
   }
 };
 const scrollToContact = () => {
   if ((window.innerWidth = 320)) {
-    window.scrollTo({ top: 2704, behavior: "smooth" });
+    window.scrollTo({ top: 4059, behavior: "smooth" });
   }
 };

@@ -5,6 +5,8 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.0.13/css/all.css" integrity="sha384-DNOHZ68U8hZfKXOrtjWvjxusGo9WQnrNx2sqG0tfsghAvtVlRW3tvkXWZh58N9jp"
+    crossorigin="anonymous">
   <link rel="stylesheet" type="text/css" href="reset.css">
   <link rel="stylesheet" type="text/css" href="landing.css">
   <link rel="import" href="/landing.html">
@@ -23,11 +25,11 @@
       <a class="flex-center" onclick="dropDownMenu(scrollToAbout)">
         <li class="flex-center">About</li>
       </a>
-      <a class="flex-center" onclick="dropDownMenu(scrollToProjects)">
-        <li class="flex-center">Projects</li>
-      </a>
       <a class="flex-center" onclick="dropDownMenu(scrollToSkills)">
         <li class="flex-center">Skills</li>
+      </a>
+      <a class="flex-center" onclick="dropDownMenu(scrollToProjects)">
+        <li class="flex-center">Projects</li>
       </a>
       <a class="flex-center" onclick="dropDownMenu(scrollToContact)">
         <li class="flex-center">Contact</li>
@@ -94,7 +96,7 @@
   <div id="skills-container" class="title-and-container show-border">
     <h1 class="text-center">Skills</h1>
     <div class="divider"></div>
-    <article>
+    <article class="flex-wrap">
       <a target="__blank" href="https://developer.mozilla.org/en-US/docs/Web/JavaScript">
         <img src="/icons_copy/javascript/javascript-original.svg">
       </a>
@@ -168,6 +170,8 @@
       <div id="kewey" class="card single-project title-and-container">
         <img id="kewey-img" src="/images/Image 5-2-18 at 7.16 AM.jpg">
         <h1>Kewey</h1>
+        <p class="techs-used">Javascript | React | Node | Express | PostgreSQL | Massive | Lodash | Styled Components | Redux | React-Router |
+          Trello | RESTful APIs | Bcrypt</p>
         <p>Kewey was developed as a web application for parents to monitor their children's location within a geofence. Using
           cell towers and wifi nodes, Kewey can track a child's geolocation and reference it against the established geofence
           setup by the parent. </p>
@@ -178,6 +182,8 @@
       <div id="qode" class="card single-project title-and-container">
         <img id="qode-img" src="/images/qode.png">
         <h1>Qode</h1>
+        <p class="techs-used">Javascript | React | Node | Express | Postgress | Massive | Lodash | Material-UI | Nodemailer | Twilio | Redux |
+          React-Router | AWS SES | Google Maps | Passport | OAuth | Trello | RESTful APIs | fencer.io</p>
         <p>Qode was designed to introduce people to the world of coding and web development. Web development is not easy. Online
           courses tend to expect a minimum amount of prior knowledge, and often times new programmers will easily get discouraged
           and overwhelmed by these high standards. Qode not only eliminates that gap of misunderstanding, but also introduces
@@ -206,13 +212,16 @@
 
     <div class="media-container">
       <a target="__blank" href="https://github.com/josephiznot">
-        <img class="github-circle icon-hover" src="/icons_copy/github/github-original.svg">
+        <!-- <img class="github-circle icon-hover" src="/icons_copy/github/github-original.svg"> -->
+        <i class="fab fa-github"></i>
       </a>
       <a target="__blank" href="https://www.linkedin.com/in/joedanderson/">
-        <img class="icon-hover" src="/icons_copy/linkedin/linkedin-plain.svg" width="25px">
+        <!-- <img class="icon-hover" src="/icons_copy/linkedin/linkedin-plain.svg" width="25px"> -->
+        <i class="fab fa-linkedin-in"></i>
       </a>
       <a target="__blank" href="https://medium.com/@josephiznot">
-        <img class="icon-hover" src="icons_copy/Medium_icon.svg.png" width="25px"> </a>
+        <!-- <img class="icon-hover" src="icons_copy/Medium_icon.svg.png" width="25px"> </a> -->
+        <i class="fab fa-medium-m"></i>
     </div>
     <p>&copy; Developed by Joe Anderson</p>
   </footer>
