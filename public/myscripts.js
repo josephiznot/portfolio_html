@@ -17,7 +17,6 @@ const dropDownMenu = cb => {
   }
   if (cb) {
     cb();
-    console.log("hit");
   }
 };
 
@@ -30,30 +29,48 @@ const closeMenu = () => {
   openMenu = !openMenu;
 };
 const scrollToHome = () => {
-  if ((window.innerWidth = 320)) {
+  console.trace(window.innerWidth);
+  if (window.innerWidth <= 320) {
+    window.scrollTo({ top: 0, behavior: "smooth" });
+  } else if (window.innerWidth <= 768) {
+    window.scrollTo({ top: 0, behavior: "smooth" });
+  } else if (window.innerWidth >= 1024) {
     window.scrollTo({ top: 0, behavior: "smooth" });
   }
 };
 const scrollToAbout = () => {
   if (window.innerWidth <= 320) {
     window.scrollTo({ top: 430, behavior: "smooth" });
+  } else if (window.innerWidth <= 768) {
+    window.scrollTo({ top: 430, behavior: "smooth" });
+  } else if (window.innerWidth >= 1024) {
+    window.scrollTo({ top: 603, behavior: "smooth" });
   }
 };
 const scrollToProjects = () => {
-  console.log("inner width:", window.innerWidth);
-  if (window.innerWidth >= 768) {
-    window.scrollTo({ top: 1689, behavior: "smooth" });
-  } else if (window.innerWidth <= 320) {
+  if (window.innerWidth <= 320) {
     window.scrollTo({ top: 2330, behavior: "smooth" });
+  } else if (window.innerWidth <= 768) {
+    window.scrollTo({ top: 1690, behavior: "smooth" });
+  } else if (window.innerWidth >= 1024) {
+    window.scrollTo({ top: 1862, behavior: "smooth" });
   }
 };
 const scrollToSkills = () => {
-  if ((window.innerWidth = 320)) {
+  if (window.innerWidth <= 320) {
     window.scrollTo({ top: 1429, behavior: "smooth" });
+  } else if (window.innerWidth <= 768) {
+    window.scrollTo({ top: 1190, behavior: "smooth" });
+  } else if (window.innerWidth >= 1024) {
+    window.scrollTo({ top: 1361, behavior: "smooth" });
   }
 };
 const scrollToContact = () => {
-  if ((window.innerWidth = 320)) {
+  if (window.innerWidth <= 320) {
     window.scrollTo({ top: 4059, behavior: "smooth" });
+  } else if (window.innerWidth <= 768) {
+    window.scrollTo({ top: 2988, behavior: "smooth" });
+  } else if (window.innerWidth >= 1024) {
+    window.scrollTo({ top: 3160, behavior: "smooth" });
   }
 };
